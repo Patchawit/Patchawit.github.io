@@ -1,0 +1,521 @@
+body {
+    overflow-x: hidden;
+}
+/*************** HEADER ***************/
+.header {
+    width: auto;
+    height: 5vw;
+    background-color: #0066FF;
+}
+.logo {
+    margin: 1.5vw 0.5vw;
+    text-transform: uppercase;
+    color: #0066FF;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5vw;
+}
+.logo h1 {
+    font-size: 2vw;
+    font-family: 'Zen Dots', cursive;
+}
+.menu {
+    text-transform: uppercase;
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 2.7vw;
+    font-family: 'Zen Dots', cursive;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.25vw 0.5vw;
+}
+.menu a:hover {
+    background: #FF6600;
+    border-radius: 0.5vw;
+    font-size: 120%;
+    
+}
+/*************** MENUBAR ***************/
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 3vw;
+    height: 0.5vw;
+    background-color: #000;
+    margin: 0.5vw 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+} 
+.change .bar2 {opacity: 0;} 
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.open {
+      display: inline-block !important;
+}
+/*************** MENUBAR ***************/
+/*************** HEADER ***************/
+/*************** BODY ***************/
+.bg1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.bg2 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.bg3 {
+    background-image: linear-gradient(rgb(255,255,255,0.5), rgb(255,255,255,0.5)), url("img/bg3.jpg");
+    z-index: -1;
+    height: 100%;
+    width: 100%; 
+}
+.bg4 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg5 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.me {
+    margin-top: 1vw;
+    width: 23vw;
+    height: auto;
+}
+.name {
+    margin-top: 50px;
+    font-size: 2.5vw;
+    font-family: 'Zen Dots', cursive;
+}
+.job {
+    font-size: 3vw;
+    font-family: 'Zen Dots', cursive;
+}
+/*************** AnnimationType ***************/
+.line {
+
+    position: relative;
+    border-right: 3px solid rgb(0, 0, 0);
+    font-size: 150%;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+}
+.anim-typewriter {
+    animation: typewriter 5s steps(40) 1s infinite normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter { 
+    0% {
+        width: 0;
+    }
+    40% {
+        width: 18em;
+    }
+    60% {
+        width: 18em;
+    }
+    80% {
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }   
+}
+@keyframes blinkTextCursor{
+    from {
+        border-right-color: rgb(0, 0, 0);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+/*************** AnnimationType ***************/
+/*************** AnnimationJob ***************/
+.job p a {
+    text-decoration: none;  
+    color: #0066FF;
+    animation: vibrate 3s infinite;
+}
+.job p a:hover {
+    color: #FF6600;
+    font-size: 120%;
+    transition: .5s;   
+}
+@keyframes vibrate {
+    0% {margin-left: 1vw;}
+    16% {margin-left: 3vw;}
+    32% {margin-left: 1vw;}
+    48% {margin-left: 3vw;}
+    64% {margin-left: 1vw;}
+    80% {margin-left: 3vw;}
+    100% {margin-left: 1vw;}
+}
+/*************** AnnimationJob ***************/
+.picpro {
+    margin-top: 2.5vw;
+    margin-left: 10vw;
+    padding-bottom: 2.5vw;
+    width: 20vw;
+    height: auto;
+}
+
+.info {
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 10vw;
+}
+.info h1 {
+    font-size: 1.5vw;
+    font-family: 'Maitree', serif;
+    padding-top: 0.5vw;
+}
+
+.edu {
+    padding-top: 1vw;
+    padding-left: 5vw;
+    padding-right: 10vw;
+    
+}
+.edu h1 {
+    font-size: 1.5vw;
+    font-family: 'Maitree', serif;
+    padding-top: 0.5vw;
+}
+
+.center {
+    padding-left: 8vw;
+    background-color: #FF6600;
+    border-radius: 5vw;
+    color: #fff;
+}
+
+.icon {
+    width: 3vw;
+    height: 3vw;
+}
+
+.project h1 {
+    margin-top: 2vw;
+    text-align: center;
+    font-family: 'Maitree', serif;
+    font-size: 1.5vw;
+}
+
+.work1 {
+    width: 30vw;
+    height: auto;
+    border-width: 5px;
+    border-style: solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.work1:hover {
+    height: auto;
+    width: 35vw;
+    transition: .5s;
+}
+.work2:hover {
+    height: auto;
+    width: 45vw;
+    transition: .5s;
+}
+.work3:hover {
+    height: auto;
+    width: 35vw;
+    transition: .5s;
+}
+
+.work2 {
+    width: 40vw;
+    height: auto;
+    padding-top: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work3 {
+    width: 30vw;
+    height: auto;
+    margin-top: 1vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.social {
+    margin-top: 5vw;
+}
+.social h1 {
+    margin-top: 1vw;
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 1vw;
+}
+
+.iso {
+    width: 10vw;
+    height: auto;
+    margin-left: 11vw;
+}
+
+.iso:hover{
+    width: 13vw;
+    transition: .5s;  
+    
+}
+.faceho a{
+    text-decoration: none;
+    color: #000;
+}
+.faceho a h1:hover{
+    transition: .5s;
+    color: blue;
+}
+.address {
+    margin-top: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Maitree', serif;
+    text-align: center;
+}
+
+.des {
+    margin-top: 2vw;
+}
+.des h1{
+    text-align: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 2vw;
+}
+.des2 {
+    margin-top: 2vw;
+}
+.des2 h1{
+    text-align: center;
+    font-family: 'Maitree', serif;
+    font-size: 1.5vw;
+}
+
+.des3 ul{
+    margin-top: 5vw;
+    text-align: center;
+    font-family: 'Maitree', serif;
+    font-size: 1.5vw;
+}
+
+.des3 ul li{
+    margin-top: 0.5vw;
+    margin-left: 20vw;
+    text-align: left;
+    font-family: 'Maitree', serif;
+    font-size: 1.5vw;
+}
+
+/*************** BODY ***************/
+/*************** 991px ***************/
+@media only screen and (max-width: 991px) {
+
+    .hamburger {
+        display: inline-block;
+        margin: 3vw;
+        margin-left: 5vw;
+    }
+    .header {
+        width: auto;
+        height: 10vw;
+        background-color: #0066FF;
+    }
+
+    .logo {
+        margin-top: 0;
+        
+    }
+    .logo h1 {
+        font-size: 3vw
+    }
+
+    .mbar {
+        background-color: #0066FF;
+        padding: 0.5vw;
+        display: none;
+        z-index: 2;
+    }
+
+    .menu {
+        margin-top: 0vw;
+        font-size: 2.5vw;
+    }
+
+    .me {
+        margin-top: 24vw;
+        z-index: 1;
+        width: 35vw;
+    }
+       
+    .job {
+        font-size: 4vw;
+    }
+    .edu {
+        padding-right: 25vw;       
+    } 
+    .info {
+        padding-right: 25vw;
+    }  
+    .info h1 {
+        font-size: 120%;
+    }
+
+    .edu h1 {
+        font-size: 120%;
+    }
+    .icon {
+        width: 5vw;
+        height: 5vw;
+    }
+    .project h1 {
+        font-size: 2.5vw;
+    }
+    .work1 {
+        width: 50vw;
+        height: auto;
+
+    }   
+    .work2 {
+        width: 60vw;
+        height: auto;
+
+    }   
+    .work3 {
+        width: 40vw;
+        height: auto;
+    }  
+    .work1:hover {
+        width: 55vw;
+    }
+    .work2:hover {
+        width: 65vw;
+    }
+    .work3:hover {
+        width: 45vw;
+    }
+    .isono {
+        width: 20vw;
+        height: auto;
+        margin-left: 40vw;
+    }
+    .iso {
+        width: 20vw;
+        height: auto;
+        margin-left: 40vw;
+    }
+    .social h1 {
+        font-size: 2vw;
+    }
+    .iso:hover{
+        width: 25vw;   
+    }
+    .address {
+        font-size: 2vw;
+    }
+    .bg4 {
+        height: 120%;
+    }
+    .des {
+        margin-top: 5vw;
+    }
+    .des h1{
+        font-size: 4vw;
+    }
+    .des2 h1{
+        font-size: 3vw;
+    }    
+    .des3 ul{
+        font-size: 3vw;
+    }
+    
+    .des3 ul li{
+        font-size: 2.5vw;
+    }
+     
+}
+/*************** 991px ***************/
+/*************** 575px ***************/
+@media only screen and (max-width: 575px) {
+
+    .menu {
+        margin-top: 0vw;
+        font-size: 3vw;
+    }
+    .project h1 {
+        font-size: 3vw;
+    } 
+    .isono {
+        width: 30vw;
+        height: auto;
+        margin-left: 35vw;
+    }
+    .iso {
+        width: 30vw;
+        height: auto;
+        margin-left: 35vw;
+    }
+    .social h1 {
+        font-size: 2vw;
+    }
+    .iso:hover{
+        width: 35vw;   
+    }
+    .address {
+        font-size: 2.5vw;
+    }
+    .des h1{
+        font-size: 5vw;
+    }
+    .des2 h1{
+        font-size: 4vw;
+    }    
+    .des3 ul{
+        font-size: 4vw;
+    }
+    
+    .des3 ul li{
+        font-size: 3.5vw;
+    }
+}
+/*************** 575px ***************/
